@@ -1,0 +1,9 @@
+    Fisher-Yates Shuffle Algorithm
+        for (int i = 0; i < alpha.Count; i++)
+        {
+            string temp = alpha[i];
+            int randomIndex = Random.Range(i, alpha.Count);
+            alpha[i] = alpha[randomIndex];
+            alpha[randomIndex] = temp;
+            Debug.Log(alpha[i]);
+        }
